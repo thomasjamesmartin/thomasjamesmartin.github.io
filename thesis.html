@@ -1,0 +1,1104 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Time, Space and Interface - Thomas Martin MA Thesis</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body class="is-preload">
+  <div id="wrapper" class="divided">
+    <section style="margin: 7.5% 13% 10% 13%;">
+      <div class="content">
+        <h1 id="time-space-and-interface">Time, Space and Interface</h1>
+        <h2 id="reframing-dialogue-design-for-better-flow">Reframing Dialogue Design for Better Flow</h2>
+        <h3 id="ma-thesis-submission">MA Thesis Submission</h3>
+        <h4 id="thomas-martin">Thomas Martin</h4>
+        <br>
+        <br>
+        <h2 id="abstract">Abstract</h2>
+        <p>Though the ‘games vs narrative’ debate has cooled in recent years (Koenitz, 2018), a brief survey of current
+          game dialogue design trends still reveals many sites disruptive to the concept of ‘flow’ proposed by
+          Csikszentmihalyi (1990). In pursuit of a diagnosis, many academic categorisations of <em>general</em> game
+          narrative are available, but - to date - few of these tools have been specifically applied to game dialogue
+          systems. Two frameworks appear particularly productive for translation: Wei, Bizzocchi and Calvert’s
+          categorisations of <em>time and space</em> (2010), and Jorgenson’s <em>gameworld interface theory</em> (2013).
+          Through a broad assessment of the ‘standard dialogue meta’ and qualitative case studies of three contemporary
+          narrative games, this paper investigates how the concepts of <em>time, space and interface,</em> when applied
+          to game dialogue systems and sequences, can better facilitate flow.</p>
+        <h2 id="contents">Contents:</h2>
+        <ul>
+          <li><a href="#introduction---games-narrative-and-disrupted-flow-introduction">Introduction - Games, Narrative
+              and Disrupted Flow</a></li>
+          <li><a href="#the-standard-dialogue-metagame--flow">The Standard Dialogue Metagame &amp; Flow</a></li>
+          <li><a href="#dialogue---finding-a-working-definition">Dialogue - Finding a Working Definition</a></li>
+          <li><a href="#game-dialogue--time">Game Dialogue &amp; Time</a></li>
+          <li><a href="#game-dialogue--space">Game Dialogue &amp; Space</a></li>
+          <li><a href="#game-dialogue--interface">Game Dialogue &amp; Interface</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#where-next---design-recommendations">Design Recommendations</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+          <li><a href="#key-sources">Bibliography &amp; Ludography</a></li>
+        </ul>
+        <h2 id="introduction---games-narrative-and-disrupted-flow">Introduction - Games, Narrative and Disrupted Flow
+        </h2>
+        <p>We play games to be transported; to feel emotions different from those we find quotidian. One way for
+          designers to engender this experience in players is narrative, a driving force for player involvement and
+          self-identification in games (Murray, 1997). As a tool for contextualising rules (Juul, 2005), as a means for
+          self-insertion and investment (Calleja, 2011), or as a way of ‘reading’ the entire experience of play
+          (Fernandez-Vara, 2014), it is one of the most studied and debated elements of game design, with a rift between
+          ‘narratologists’ and ‘ludologists’ emerging in the late nineties and early noughties (Koenitz, 2018). Prompted
+          by articles such as Juul’s ‘Games telling stories’ (2001) and Aarseth’s ‘Computer game studies, year one’
+          (2001), ludic purists and narrative cheerleaders argued as to whether narrative enhanced gameplay, or
+          disrupted it.</p>
+        <p>Today, the argument has cooled significantly. More specific definitions, as well as the broadening of game
+          studies generally, have helped paper over academic disagreements. The market has spoken in narrative’s favour
+          too, with previously narrative-sceptic genres now incorporating story - <em>Fifa</em> has an authored campaign
+          mode (EA Sports, 2020); <em>Forza</em> has a writer’s room (Playground Games, 2021). The commercial and
+          critical dominance of adventure games like <em>The Last of Us 2</em> (Naughty Dog, 2020), the
+          <em>Uncharted</em> series and <em>Red Dead Redemption 2</em>(Rockstar Studios, 2018) demonstrates developers
+          looking to cinema to bridge the gap between narrative and gameplay, but <em>Disco Elysium’s</em> recent
+          success shows that more literary games can strike a deeply popular chord (ZA/UM, 2019). Many of these works,
+          however, still evince the issues that Juul et al were skeptical of at the turn of the century - crucially,
+          that their narratives disrupt the ‘flow’ of their gameplay.
+        </p>
+        <p>The psychological concept of ‘flow,’ posited by Mihael Csikszentmihalyi (1990), is a popular lens for
+          analysing games. Flow refers to the state of ‘<em>deep focus in which one is intensely engaged in an activity
+            for its own sake</em>,’ and the phenomenon has been clearly mapped onto game design pipelines and player
+          experience (Chen 2007). If something <em>were</em> being disrupted by, say, narrative, it would be the
+          player’s ‘flow-state’ while engaging with the game’s mechanics - their ‘ludic involvement’ (Calleja 2011).
+          Conversely, if gameplay butted up against the sense of a story, the player’s ‘narrative involvement’ would be
+          interrupted. But, to take the ludic side for a moment, what specifically about narrative could interrupt
+          gameplay? Many (if not most) elements of game design can also be employed to deliver a sense of narrative.
+          Ludic purists would hardly object to, say, the visual design of Chess, which communicates a clear narrative of
+          hierarchy and medieval militarism (Koenitz, 2018), nor to audio design, which can contribute to narratives of
+          place and progress. No, it is the <em>written</em> narrative - the game’s <em>text</em> - that for ludic
+          purists most clearly interrupted the flow of gameplay.</p>
+        <h3 id="text--text-types">Text &amp; Text Types</h3>
+        <p>A contemporary videogame will often feature a variety of different texts, from instructional writing to
+          spoken dialogue, item descriptions to environmental graffiti (Bateman, 2007; Heussner et al, 2015).</p>
+        <p><em>Each type of text seems to have its own narrative mechanics to motivate readers. The text type structures
+            the way in which the text is composed and processed.</em><br>
+          (Bauer &amp; Suter, 2021)</p>
+        <p>The narratological term ‘text type’ in the above quote refers to genres - detective, romance, thriller - but
+          can just as easily be applied semantically to the different types of written content in games. <em>The Game
+            Narrative Toolbox</em>(2015) identifies seven different ‘types’ of text common in games:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Text type</th>
+              <th>Function</th>
+              <th>Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Instructional / UI text</td>
+              <td>Tutor rules of game</td>
+              <td>Clear language, short sentences</td>
+            </tr>
+            <tr>
+              <td>Item descriptions</td>
+              <td>Increase narrative immersion, communicate purpose of item</td>
+              <td>Flavourful, tonally heightened (for comic/atmospheric effect)</td>
+            </tr>
+            <tr>
+              <td>Investigated diegetic text (eg journal entries, audio logs)</td>
+              <td>Increase narrative immersion at player’s discretion, break up pace</td>
+              <td>Often more prosaically written</td>
+            </tr>
+            <tr>
+              <td>Environmental diegetic text (eg shop signs, directions, graffiti)</td>
+              <td>Increase narrative immersion, communicate player position re: goals</td>
+              <td>Context-dependent, but often humorous; short, ‘realistic’</td>
+            </tr>
+            <tr>
+              <td>Cutscene dialogue</td>
+              <td>Increase narrative / emotional immersion, define goals</td>
+              <td>Punchy, ‘cinematic’, clear</td>
+            </tr>
+            <tr>
+              <td>Interactive dialogue</td>
+              <td>Increase narrative and emotional immersion, represent game mechanics, provide player with agency, act
+                as ‘puzzles’</td>
+              <td>Highly game dependant, multi-voiced, dramatic, emotive, characterful, clear</td>
+            </tr>
+            <tr>
+              <td>‘Barks’</td>
+              <td>Communicate game-state, maintain narrative immersion</td>
+              <td>Concise, ‘flavourful’, not overly differentiated</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><em>Table A: common game text types, functions and forms</em></p>
+        <p>While each of the above text types can be critical in forming the narrative of a game, it is clear that
+          interactive dialogue has the most possible functions. It is of some surprise, therefore, how little academic
+          or technical attention has been given to it. Narrative textbooks and resources focus on the difference between
+          narrative, plot and story, or on effective worldbuilding, or on quest design, but pay little attention to the
+          art of dialogue. <em>Narrative Mechanics</em> (Bauer et al, 2021) mentions the word 11 times in its 363 pages.
+          <em>The Game Narrative Toolbox</em> (Heussner et al, 2015) defines dialogue’s purpose as ‘to keep the game
+          moving.’ Academics have famously looked to theatrical theorists like Aristotle (Mateas, 2004), Stanislavsky
+          (Fernandez-Manjon et al, 2013) and Boal (Frasca, 2004) to provide narratological frameworks more rooted in the
+          stage than cinema or literature; none of these delve into the specific details of dialogue. Of the countless
+          papers submitted to DiGRA, only 4 feature ‘dialogue’ as a keyword (contrast this with the 33 concerning
+          ‘narrative’ alone) (DiGRA, 2021).
+        </p>
+        <p>While a game’s written content may exist to outline gamestate-relevant information to the player (Heussner et
+          al, 2015), dramatic dialogue serves a different purpose - communicating not only story, but also theme and
+          emotion (Edgar, 2021). A well-written line of dialogue must tell the audience both what the character is
+          saying, thinking and feeling. Unlike characters in a play or a film, however, the player’s decision of what to
+          do next is rarely already made for them by the writer. Upon hearing / reading and understanding the story, the
+          player must make the ‘narratively salient’ decision to move it onward (Tanenbaum &amp; Tanenbaum, 2008),
+          answering the question ‘what do I / what does my character do next?’ In service of this, game dialogue is
+          often co-opted into the pedagogical modes of tutorial text or instruction manual. Additionally, players are
+          already primed to search beneath the ‘flavour’ and ‘lore’ of investigated and environmental diegetic text
+          types to uncover clues as to the game state. The extension of this detectorising ‘mode’ (coupled with the
+          popularity of achievements for experiencing or ‘collecting’ every piece of content) has been lamented by
+          independent game designers (Ingold, 2018; Yang, 2018) as one of the reasons game dialogue often disappoints -
+          when much of a game’s written content exists to direct or inform, is it any wonder that players react to the
+          dramatically written text in much the same way they do to item descriptions or UI text, searching beneath the
+          ‘flavour’ for decision-relevant information? Or that this activity is necessarily both distracting from
+          gameplay and counterproductive to narrative involvement? And have designers perhaps internalised this as the
+          ‘standard’ way of designing dialogue?</p>
+        <h2 id="the-standard-dialogue-metagame--flow">The Standard Dialogue Metagame &amp; Flow</h2>
+        <p>Whether through design best practices, the accessibility of technology and assets, or the loop of consumer
+          feedback, games have never looked - or played - more similar. Boluk and LeMieux (2017) condense this cultural
+          codification of contemporary digital games into what they call the ‘standard metagame’: the generally accepted
+          way that games feel, behave, react etc., including technical standards, UX, tropes and customs across both
+          genre and design. This usefully broad model can be focused on specific elements, too. For example, the
+          ‘standard dialogue metagame’ contains: voiced cutscenes and subtitles for AAA games; abstract response menus
+          for open-world RPGs; scrolling text boxes for CRPGs; single-line text boxes for JRPGs. Popular innovations in
+          the standard dialogue metagame are quickly adopted <em>en masse</em>: the floating button or trailing
+          ellipses, signifying that a dialogue can be sped up by player input; UI-displayed 'cell phone’ chatboxes;
+          exposed success percentages for dialogue options that contain risk; vividly animated ‘speech bubbles’ borrowed
+          from Japanese manga, to name but a few.</p>
+        <p>Csikszentmihalyi (1990) defines eight factors that enable flow: <em>a challenging activity requiring skill; a
+            merging of action and awareness; clear goals; direct, immediate feedback; concentration on the task at hand;
+            a sense of control; a loss of self-consciousness; an altered sense of time.</em> In order to identify
+          flow-disruptive tropes in contemporary dialogue design, I will map the ‘standard dialogue metagame’ to
+          Csikszentmihalyi’s eight factors of flow.</p>
+        <p><em>Challenging activity requiring skill</em></p>
+        <p>Bauer and Suter maintain that, when engaging with written text, ‘the reader is permanently challenged at the
+          level of the reading process’ (2021). Although this is evidently true - the experience of ‘getting lost in a
+          good book’ is one of the ur-examples of Csikszentmihalyi’s flow - the difference in <em>challenge</em> between
+          A: employing language skills to parse a sentence, and B: engaging in the complexities of even the simplest
+          game mechanics must be considered. Some mental repositioning on the part of the player is always to be
+          expected, and it is this repositioning - from dealing with rules just learnt (gameplay) to performing an
+          action taught to most at the earliest age (reading) - that disrupts flow.</p>
+        <p>Additionally, the act of engaging with dialogue is often of the simplest nature. Following contemporary UX
+          good practice, oftentimes any button can be used to ‘skip’ a piece of voiced dialogue; holding it down
+          ‘prints’ out a textual line faster than its originally designed animation. Selecting responses is similarly
+          simple, with radial or scrolling menus a popular choice. The continuous requirement to press ‘next’ or
+          ‘select’ - in place of the skilled inputs required to progress in the rest of the game - might well be a
+          barrier to flow.</p>
+        <p><em>Action and awareness</em></p>
+        <p>Shifting into a dialogue scene often signifies that a player’s actions won’t affect the wider gameworld, nor
+          that the gameworld will affect her. In this way, the player’s relationship to both action and awareness
+          abruptly changes. To effect a smoother refocus of this awareness (even if the sense of action is altered),
+          designers make great use of environmental design and camera animation. In the environments of open world RPGs,
+          for example, interactable NPCs are often found ‘nestled’ in corners of the environ, where conversation is
+          ‘safe’; when an NPC is found out in the open, this often signifies a trap that will fling the player back into
+          the action of the game. With cameras, designers program a gentle zooming to direct a player’s attention on a
+          nearby NPC available for dialogic interaction (<em>Legend of Zelda: Breath of the Wild</em> - Nintendo EBD,
+          2017), or else subtly altering the frame of the image. Player avatars are even sometimes forced to lower their
+          weapon to indicate a ‘safe zone for listening’ too (<em>Half-Life 2</em> - Valve, 2004) - these types of
+          intervention make players aware of a game’s limiting behaviours and design intentions, while reducing their
+          capacity for action.</p>
+        <p><em>Goals</em></p>
+        <p>The goals of experiencing or interacting with game dialogue are sometimes nebulous. As discussed above, the
+          subtext of much game dialogue is instructional; the goal of moving through that sort of text could be about
+          learning what action the game ‘wants’ a player to do next. <em>The Game Narrative Toolbox</em>, with its
+          assertion that dialogue’s purpose is to ‘keep the game moving,’ might even lead one to think that the player’s
+          goal in engaging with dialogue is to return to ‘playing the game’ as soon as possible (Heussner et al, 2015).
+          In RPGs, dialogue sequences that themselves contain goals (‘get Briony to give you a good deal on the
+          pineapple’) are telegraphed by dialogic asides with other characters (‘we really need that pineapple, see if
+          you can get a good deal’). With regards to ludic flow, dialogue goals are rarely as visceral or as juicy as
+          the gameplay goals.</p>
+        <p><em>Direct, immediate feedback</em></p>
+        <p>When selecting dialogue options, game feedback is usually indirect, and less than immediate, often left to
+          the next ‘line’ of dialogue: if voiced, the actor’s performance provides feedback; if animated, then the
+          character model and camera do so. Notable exceptions are <em>Fallout 3</em>’s Pip-Boy ‘ker-ching’ on
+          successful dialogue skill rolls (Bethesda Game Studios, 2008) and <em>Disco Elysium</em>’s high-octane UI
+          colour splashes, but most dialogue interfaces are light on what Jayemanne terms ‘technical overstimulation’
+          (2019). If dialogue is voiced, response options will float like subtitles in front of the scene, or occupy a
+          distinct UI panel; if written, text will be displayed in a readable font, and usually animated at a readable
+          pace. The UI generally gets out of the game’s way when it comes to feedback, though more exceptions can be
+          found in games with ‘diegetic’ dialogue interfaces, like ‘phones’ with messaging apps (<em>Coming Out
+            Simulator</em> - Case, 2014) or ‘computers’ with faux-email and chat applications (<em>Uplink</em> -
+          Introversion, 2001). These games mimic the fulsome feedback of the devices from which their UIs are drawn, and
+          like those devices some are capable of holding multiple goals and tasks in hand - something designers are more
+          commonly leaning into to increase flow.</p>
+        <p><em>Concentration on the task at hand</em></p>
+        <p>Depending on player persuasion, the definition of ‘task at hand’ could refer to either the gameplay or the
+          narrative experience, but the academic consensus is that the two go hand in hand, and that players feel
+          involved ludically and narratively to different degrees at different moments (Calleja, 2011; Koenitz, 2018).
+          However, it must be conceded that the gear-shift between the two ‘tasks’ - as with the shifting between ludic
+          and narrative goals - can be a site for the disruption of flow. This can be felt in interface design, with a
+          tension appearing when ‘the game activity becomes centered on the overlay and not on the gameworld itself’
+          (Jorgenson, 2013).</p>
+        <p><em>Sense of control</em></p>
+        <p>Contemporary 3D games feature responsive, finely tuned control schemes for a player exploring an environment;
+          these stand in contrast to the often simplistic level of interaction required for their dialogue navigation
+          and selection. Indeed, dialogue sequences can be one of the few moments in which the player is <em>not</em> in
+          control of how their character is moving or behaving.</p>
+        <p>The most popular AAA method of delivering dialogue is via cutscenes or else ‘played’ under the action, like
+          an underscore. Depending on the game, these methods mostly disregard players’ immediate choice; a player may
+          have performed an earlier action which triggered this particular cutscene, but during it they have no say on
+          what their character says. During cutscenes, controls are generally locked - understandably the player loses
+          control in these sequences. ‘Underscore’ or ‘overheard’ dialogues can give players a feeling of voyeurism and
+          agency, although some provoke feelings of player impotence in worse ways than cutscenes: in the <em>Assassin’s
+            Creed</em> series, players are often tasked with ‘stalking’ a target in order to overhear their
+          conversation; if the player strays from ‘earshot,’ the mission fails and the process (and entire conversation)
+          frustratingly repeated.</p>
+        <p>When dialogue selection <em>is</em> required, two control schemes are usually available: full sentence
+          selection (what you see is what you say) and abstract response (paraphrased indicators of content or intent).
+          Full sentence selection can entail a large amount of reading, and runs the risk of disrupting <em>action and
+            awareness</em>. With abstract response systems, players gain a less time-consuming dialogue selection
+          process, but lose the certainty of what their character would say. Games like <em>Mass Effect</em> (Bioware,
+          2007) and <em>Alpha Protocol</em> (Obsidian Entertainment, 2010) played into this uncertainty skillfully,
+          while games like <em>Fallout 4</em> (Bethesda Game Studios, 2015) received criticism over a loss of vocal
+          character control. Unless a game tutors for NPCs reacting unexpectedly, abstract response dialogues can
+          contribute to narrative disconnect - and a disruption in flow.</p>
+        <p><em>Loss of self-consciousness</em></p>
+        <p>Losing self-consciousness is a function of player involvement, be that narrative, ludic or emotional
+          (Calleja, 2011), but dialogue systems work hardest to give meaning to the player’s narrative agency. When
+          players encounter a ‘break’ in narrative sense - perhaps they’re offered a choice their character would never
+          consider, perhaps the game offers them no choice - their immersion suffers. Though these can be seen as issues
+          with the <em>writing</em> of game dialogue, Ingold has remarked on the popular <em>hub-and-spoke</em> approach
+          to dialogue structure, and its propensity for breaking immersion (2018). The instructional nature of dialogue
+          can also disrupt flow, especially if it becomes notably <em>repetitive</em>.</p>
+        <p>Additionally, in 3D RPGs like <em>The Witcher 3</em> (CD Projekt Red, 2015), or narratively driven action
+          games like <em>Max Payne</em> (Remedy Entertainment, 2001), the camera is usually floating some in-game feet
+          behind and above the avatar. Dialogic interactions (whether interactive or cutscenes) are one of the few times
+          the player is made aware of their character’s face, or their expressions, and this effect is of course even
+          more pronounced in first-person games. Whether this reminder of avatar appearance and expression has any
+          effect on player self-consciousness is something yet to be studied.</p>
+        <p><em>An altered sense of time</em></p>
+        <p>Real-time narrative games make various efforts to keep players’ experience of time as continuous as possible.
+          When it doesn’t rely on cutscenes, the <em>GTA</em> and <em>Assassin’s Creed</em> series’ dialogue takes the
+          form of a non-interactive scene played and animated while the player is busy with another action - driving in
+          the case of <em>GTA</em>; following or eavesdropping in the case of AC. In games like <em>The Walking
+            Dead</em> (Telltale Games, 2012) or <em>Detroit: Being Human</em> (Quantic Dream, 2018), more intense
+          dialogue decisions are made under the pressure of a ticking clock or timer. Contemporary RPGs such as
+          <em>Baldur’s Gate 3</em> (Larian Studios, 2020) and <em>The Witcher 3</em>, while they do make use of
+          cut-scenes, rely on dialogue trees accompanied by fully voiced and animated character models. These models are
+          animated even during the player’s co-ordination time, giving the impression that action is continuing even
+          when the gameworld is - for all mechanical intents and purposes - paused. This results in the uncanny
+          experience of watching NPCs emotively ‘wait’ for a dialogue choice to be selected. <em>Disco Elysium</em>
+          inverts this trend to some effect: the in-game timer advances by three minutes per dialogue selection, while
+          traditionally time-advancing activities like walking, changing outfits or examining the environment take place
+          in a state of suspension.
+        </p>
+        <p>Generally speaking, though, games will either: suspend time in order to ‘enter’ a dialogue scene; maintain a
+          turn-based time signature that lessens the interruptive feel, or else blend their dialogue ‘over’ or ‘under’ a
+          player’s actions. These approaches can have various effects on a player’s perception of time.</p>
+        <p><em>***</em></p>
+        <p>The above (far from exhaustive) breakdown makes a few things clear. Firstly, the standard dialogue metagame
+          still includes many sites prone to flow disruption. Secondly, developers have bent over backwards devising
+          workarounds for these issues, and their design choices have been co-opted by other developers when faced with
+          similar issues. Thirdly, given the continuing commercial growth of the games industry, consumers have grown to
+          <em>expect</em> games to both feature these industry-standard design choices (Jayemanne, 2019), and to contain
+          sites disruptive to flow. The general picture is of a medium well aware of the potential power and reach of
+          its stories, but only now awakening to the implications of - and assumptions it has made about - the tools it
+          has been using to tell them. Deepening this understanding must begin with an appraisal of the material in
+          question - dialogue.
+        </p>
+        <h2 id="dialogue---finding-a-working-definition">Dialogue - Finding A Working Definition</h2>
+        <p>Dialogue can be defined as:</p>
+        <ul>
+          <li>
+            <p><em>conversation between two or more people</em></p>
+          </li>
+          <li>
+            <p><em>an exchange of opinions on a particular subject; discussion</em></p>
+          </li>
+          <li>
+            <p><em>the lines spoken by characters in drama or fiction</em></p>
+          </li>
+          <li>
+            <p><em>a particular passage of conversation in a literary or dramatic work</em></p>
+          </li>
+          <li>
+            <p><em>a literary composition in the form of a dialogue</em></p>
+          </li>
+        </ul>
+        <p>(Collins, 2021)</p>
+        <p>Most of these definitions describe an extant artifact - dialogue as a whole, or a chunk - and indeed this is
+          helpful from the perspective of literary analysis. Books and poems have little variance in objective reader
+          experience, different readers almost always being presented with the same words in the same order, experienced
+          in real-time then reflected upon after completion (Iser, 1991). However, as games academics have found,
+          analytical techniques borrowed from literature studies rarely account for things like different playstyles,
+          session lengths, or even the sheer length of some games. Even less do they map to the player’s order and pace
+          of experience - entire scenes, subplots or characters can be absent from one player’s playthrough, whereas
+          they may be the most critical narrative moments of another’s (Herman’s ‘fuzzy temporality’ (2002)).</p>
+        <p>With all this in mind, it has proved difficult to categorise or analyse the design, writing or effect of a
+          game’s dialogue beyond the surface level (a journalistic ‘is the writing good or bad?’). Yet games academics
+          are frequently able to analyse game loops that take hundreds of hours and vary between players - why not so
+          with text? Perhaps a different definition of dialogue could help?</p>
+        <p>In both the fields of semantics and computing, a dialogue (whether spoken, written or signed) is defined as a
+          <em>communication</em> that takes place between two (or more) <em>agents</em> (Brusk &amp; Bjork, 2009). Both
+          of these agents - which we can assume to exist in both <em>time and space</em> - are involved in the forming
+          and receiving of utterances, as well as negotiating and ‘playing’ the rules of a language-game using a common
+          <em>interface</em>, which is usually a shared language (Austin, 1962; Searle, 1969). Considering dialogue as
+          such a process of exchange cements interactivity into the definition, which is obviously useful from a games
+          studies perspective. So we might arrive at a working definition of dialogue:
+        </p>
+        <p>an <em>interaction</em> that takes place between <em>agents</em>, over <em>time</em>, in <em>space</em>, and
+          through some kind of <em>interface</em>.</p>
+        <p>Some more clarity can be gained by separating dialogue into the two forms in which it is experienced: as a
+          <em>system</em> and as a <em>sequence</em>. The system defines how the dialogue has been designed and how it
+          is delivered; the sequence refers to a passage of time during which dialogue is experienced. In playwriting
+          one might say that the system is the script as a whole; the sequence is the scene, or even the beat. This
+          definition now allows for the analysis of how the dialogue has been <em>designed</em>, how it is
+          <em>experienced</em>, and how it has been <em>written</em>. I will now focus on the first two considerations
+          in order to better map concepts of dialogue onto Csikszentmihalyi’s elements of flow, using as lenses the
+          concepts of <em>time</em>, <em>space</em> and <em>interface.</em>
+        </p>
+        <h2 id="game-dialogue--time">Game Dialogue &amp; Time</h2>
+        <p>Zagal and Mateas (2007) separate time into four discrete categories: real-time (physical time / actual
+          play-time); gameworld time (how and at what rate events within a game progress relative to player action);
+          coordination time (the relationship between the actions of game agents and the player), and fictive time (what
+          the progression of gameworld time means within the narrative of the game). Much has been built upon their work
+          (Eskelenin, 2004; Tychson et al, 2009), and recently Jayemanne proposed an elegant trinary categorisation that
+          allows for games’ temporal complexity to be addressed using comparative literary theory (2019). His
+          <em>diachronous</em> time - the emotional <em>deja vu</em> of multiple playthroughs - is of particular use
+          when considering dialogue, but it is Wei, Bizzocchi and Calvert’s thorough mapping of established concepts of
+          narratological time onto digital game storytelling methods that I will apply to dialogue in this paper (2010).
+        </p>
+        <p>Wei et al, like Zagal and Mateas, separate the notions of gameworld time and real-time, but apply the terms
+          of literary theorists Bal (2009), Prince (2003) and Bridgeman (2007). In their unified framework, <em>story
+            time</em> is the overarching term for <em>what happens</em> in a narrative - were it to be laid out on a
+          timeline from beginning to end, as it were. <em>Discourse time</em> refers to the time in which a narrative is
+          experienced - for the listener of an anecdote it is the time spent hearing; for the reader of a book, the time
+          spent reading. In games, however, a player reads and acts at the same time;_discourse time_accounts for this
+          entire process. The relationship between <em>story time</em> and <em>discourse time</em> is what defines a
+          narrative, and can be divided into three categories: <em>order, speed</em> and <em>frequency.</em></p>
+        <p><em>Order (linear, non-linear)</em></p>
+        <p>Order can be separated into <em>linear</em> and <em>nonlinear</em>. Experiencing dialogue linearly allows a
+          player to build up assumptions about the role they are playing, advancing alongside their character through
+          discourse time. Though many games make use of nonlinear story structures (flashbacks / time travel), few
+          include non-linear <em>dialogue</em> - it is relatively rare for lines of dialogue to be presented out of
+          order, and certainly for a player’s dialogue options to be disconnected from linear sense. Order can, however,
+          be used to consider interruption - can a player break the natural ‘order’ of dialogue by interjecting? - and
+          also the flexibility of the game’s dialogue systems. For example, Pendragon (Inkle, 2020) uses a
+          storylet-style system to select the dialogue sequences, snippets and choices that are most relevant to the
+          player at that moment in discourse time, taking into account choices they have made in this and previous
+          rounds, other game agents that exist, their proximity to the endgame, and the type of dialogue sequences they
+          have been shown thus far. While the order of individual ‘lines’ is still largely linear, that they are chosen
+          procedurally rather than authorially lends a sense of reactive nonlinearity to the game’s narrative.</p>
+        <p>Wei et al also observe that ‘games have one distinct use of temporal order that is not found in other
+          narrative forms, that is, to use order as the answer of a puzzle’ (2010). Whether or not the order of
+          responses <em>within</em> a dialogue tree matters will alter a player’s relationship to a dialogue system, and
+          the game’s discourse time, significantly.</p>
+        <p><em>Speed</em></p>
+        <p>The <em>speed</em> of narrative can be divided into five categories, and these terms can easily be applied to
+          most game dialogue systems. <em>Scene</em> is the most common type, with story time and discourse time in
+          unison - characters ‘say’ lines, they are either voiced entirely or the player reads them in real-time. When
+          discourse time is shorter than story time, the dialogue can be described as a <em>summary.</em> This can be
+          found in games like <em>King of Dragon Pass</em> (A Sharp, 1999) and lately the <em>Crusader Kings</em>
+          series, in which description often contextualises a single dialogue choice - ‘off with her head!’ - in a scene
+          that would normally take longer to experience; ‘token-based’ dialogue systems triggered by the use or exchange
+          of inventory items (Bateman, 2007) - as in <em>Monkey Island</em> (Lucasfilm Games, 1990) - might also be
+          described as <em>summary</em>. <em>Stretch</em> (in which discourse time is longer than story time) might
+          include dialogue with additional details akin to stage directions or the intervention of an internal monologue
+          - <em>Disco Elysium</em> is full of these tropes, and oscillates between <em>scene</em> and <em>stretch</em>.
+          <em>Ellipsis</em> is an extended kind of <em>summary</em>, but with intermediate action removed. Moments of
+          <em>ellipsis</em> are frequent in games, but rarely make up the bulk of dialogue systems; they can sometimes
+          be found in MMOs like <em>World of Warcraft</em> (Blizzard Entertainment, 2004), where dialogue might
+          represent the time it takes for an NPC crafting an item for the player, for example. <em>Pause</em> refers to
+          both story time and discourse time being suspended. When a game’s dialogue is unvoiced, reading often
+          <em>feels</em> like a pause; however, by reading the text the player is still experiencing discourse time. It
+          is therefore more useful to associate <em>pause</em> with text types that provide solely ludic information -
+          tutorial and menu text, for example.
+        </p>
+        <p><em>Frequency</em></p>
+        <p>Frequency can be conceived as <em>singular</em>, <em>repetitious</em>, or <em>iterative.</em>
+          <em>Singular</em> dialogue sequences can be found in more cutscene-heavy AAA titles, in which - like a movie -
+          the story is always moving forwards. The player can never repeat the ‘guitar scene’ in <em>The Last of Us</em>
+          (Naughty Dog, 2013), for example, although it may be referenced diachronously later in the game. More
+          narratively experimental independent games, like those of studio Inkle, feature an approach that could also be
+          described as singular - conversations never (or at least very rarely) repeat, and players get one shot at
+          decisions and responses (Ingold, 2018).
+        </p>
+        <p>Repetitious dialogue - in which the same conversation can be accessed by the player at different times - is
+          common in open-world RPGs, MMORPGs and CRPGs, although by altering the game state the player also encourages
+          that dialogue to change - this might be termed iterative dialogue. For example, a seemingly repetitive NPC
+          might give three dialogue options consistently, but only after a certain player action will their dialogue
+          menu iterate into offering a fourth, or deleting the second. Generally speaking, the more iterative the
+          dialogue, the more interactive the narrative.</p>
+        <h2 id="game-dialogue--space">Game Dialogue &amp; Space</h2>
+        <p>‘The defining element in computer games is spatiality.’ So holds Espen Aarseth in their article ‘Allegories
+          of space’, continuing that ‘games are essentially concerned with spatial representation and negotiation;
+          therefore the classification of a computer game can be based on how it represents or, perhaps, implements
+          space’ (2007). Nitsche contends that the player’s experience is driven primarily by spatial structure, as -
+          unlike in cinema - most game narrative elements are organised by space rather than time (2007). Different
+          categorisations of game space and narrative space have been proposed by Jenkins (2004) and Wolf (2001), but I
+          revisit Wei, Bizzocchi and Calvert here for their work on mapping narratological theories of space onto
+          digital game storytelling.</p>
+        <p>Following Zolan (1984), they organise game narrative space into three types: <em>topographical</em>,
+          <em>operational</em> and <em>presentational</em>. The topographical is the underlying structure - it is the
+          spatial design as it exists before a player experiences it, without time. Worldbuilding, setting, character
+          backstory, but also everything that <em>might</em> happen within a game. The operational is the story space
+          reacting to the addition of the player’s experience and influence - time has been added, in other words. The
+          plot as it develops during this specific playthrough; everything that <em>does</em> happen during a
+          playthrough. The presentational refers to how the game manifests both the topographical and the operational -
+          how it shapes and colours narrative through ‘visual, auditory, textual, haptic and other cues.’ To stretch
+          these definitions over dialogue design, one might consider the topographical to be how dialogue sequences are
+          shaped and structured during the design and writing process, and how they exist in the game’s files or mapped
+          out in a wiki or guide; the operational to be how a player experiences and interacts with the dialogue during
+          a single playthrough; and the presentational to be the method in which the dialogue is presented to the
+          player. Wei et al are at pains to remind us that ‘it is [always] the combination of the three modes working
+          together that make the design and experience of a game’s narrative space effective and satisfying’ (2010).
+        </p>
+        <p><em>Topographical: Layouts</em></p>
+        <p>In the fields of narrative design, story space has been famously visualised in Murray’s maze and rhizome
+          (1997), the ‘story cave’, and Short’s quality-based, salience-based and waypoint structures (2016). These
+          layouts are applied both at the macro level (story structure, scene ordering) and the micro level (quest
+          design, branching dialogue trees), and provide different affordances for both player agency and authorial
+          control. Wei et al refer to Adams’ (2010) common patterns:<em>open layout</em>, <em>network</em>,
+          <em>combination</em>, <em>linear</em>, <em>parallel</em>, <em>ring</em> and <em>hub-and-spoke</em> - the
+          <em>hub-and-spoke</em> dialogue tree being recommended in <em>The Game Narrative Toolbox</em>(Heussner et al,
+          2015). While, unlike the map of a gameworld, the topographical layout of a game’s dialogue design is rarely
+          something a player will get a bird’s eye look at while they play, both the number of interactive options and
+          the frequency of sequences will often provide subliminal clues as to the true topographical layout, like the
+          colour of water indicates its depth. Returning to the same dialogue options indicates a <em>hub-and-spoke</em>
+          design (<em>Fallout</em> - Interplay Productions, 1997); single, repetitive lines might indicate a
+          <em>linear</em> dialogue sequence set within an <em>open</em> story layout (<em>Legend of Zelda: Breath of the
+            Wild</em>).
+        </p>
+        <p>For a player, ‘where’ a dialogue sequence sits within a game’s story space layout also affects their
+          experience of it. Sequences might be locked after, say, the player has entered a certain district, or require
+          three in-game ‘years’ in order to trigger. The density of dialogue sequences as related to the system’s layout
+          also creates meaning, quest-related dialogue sequences in denser groups at the more <em>hub</em>-style central
+          acts, and sparser at the more <em>networked</em> peripheral areas (<em>Star Wars: KOTOR</em> - Bioware, 2003).
+          Games tend to taper out the amount of interactive dialogue sequences in their end stages, in order to focus
+          players towards one of (a handful of) predesigned endings.</p>
+        <p><em>Topographical: Spatial oppositions</em></p>
+        <p>Spatial opposition - the use of spatial contrast to create meaning - has a surprisingly wide application in
+          dialogue design. Wei et al direct the reader towards ideas of ‘inside’ and ‘outside’, and these distinctions
+          can be found in the dungeon-specific NPC dialogues of <em>Baldur’s Gate II</em> (Bioware, 2001). Stretching
+          the definition, a line can be drawn to levels of internality. The ‘internal’ and ‘external’ dialogues of
+          <em>Disco Elysium</em> or the ‘stage directions’ common in tabletop-inspired CRPGs, for example, create layers
+          of narrative and ludic meaning that a more ‘realistically’ designed dialogue system, like <em>The Walking
+            Dead</em>’s, cannot.
+        </p>
+        <p>However, looking at the literal <em>shape</em> of a dialogue system’s writing can reveal much about the
+          designers’ approach to spatial opposition. ‘Background’ NPCs will often be granted short, single lines of
+          dialogue to compensate for the amount of times those lines will likely be activated. Players may only have a
+          single available response, or an entirely non-interactive system may be used for triggering these lines, as in
+          the comical streetwalking NPCs of the <em>Grand Theft Auto</em> or <em>Saints Row</em> series. Contrast this
+          with the cinematic flair of these games’ ‘main’ dialogue sequences, complete with chunkier soliloquies for
+          their villains, and one can observe as much difference in complexity and rhythm as between theatrical
+          dialogue, monologue, and song (with <em>Saints Row IV</em> (Volition, 2013) indulging in the latter to
+          memorable effect).</p>
+        <p>A game’s dialogue system can also engage with spatial opposition on the fly. Emily Short, in a talk on
+          designing <em>Animal Farm</em> (Nerial, 2020), reveals a storylet system that alternates its bias between
+          ‘major’ and ‘minor’ events, so as not to overwhelm the player with a series of story-critical - and usually
+          more lengthily written - events (Short, 2021). One can easily imagine a dialogue system using a similar
+          approach to vary line length in conversations.</p>
+        <p><em>Operational: Mobility of characters and objects</em></p>
+        <p>This classification would usually apply to the movement of agents within a gameworld; with that comes the
+          consideration of whether the dialogue itself moves with the player across the gameworld? We have already
+          discussed examples of this with the ‘underscore’ dialogue design of AAA games, but included in this
+          consideration might also be the dialogue assigned to a player’s party in a CRPG like <em>Pillars of
+            Eternity</em> (Obsidian Entertainment, 2015). In that game, most NPCs have a fixed position, both in the
+          operation of the story and in the gameworld, usually only moving if engaged in combat. Their dialogue can be
+          accessed only at their specific location. A number of ‘playable’ NPCs, however, will join the player on her
+          adventure, and carry with them dialogue sequences triggered by specific gamestates - time spent with the
+          player, for example, or the party reaching a specific level of ‘reputation.’ These dialogues could be said to
+          be mobile.</p>
+        <p>Of further interest is whether player mobility is taken into consideration by the dialogue system. While not
+          offering explicit dialogue ‘choices’ as such, the dialogue systems of <em>Portal</em> <em>2</em> (Valve,
+          2011)<em>, Firewatch</em> (Campo Santo, 2016) and <em>Half-Life: Alyx</em> (Valve, 2020) interpret player
+          position, movement and action as specifically as a dialogue tree. These games minimise the player’s ‘verbal’
+          agency while maximising their ‘physical’ agency.</p>
+        <p><em>Operational: Paths and axes</em></p>
+        <p>How does a player move through a dialogue sequence itself? Is there a single path in and out of a dialogue?
+          In the <em>Mass Effect</em> series, while there is a single <em>path</em> through many of the dialogue
+          sequences, a player might be said to have chosen either the Paragon or the Renegade <em>axes.</em> Dialogue
+          ‘branching’ is one of the most widely employed design approaches, but can players ‘move’ between branches,
+          across paths? Once they are on a path, is it unidirectional or bidirectional? Put glibly, is there a ‘back’
+          button - and if there is, what does it mean for the game’s temporality? The interventions of companion NPCs
+          might provide short ‘detour’ paths within sequences; relying on a particular RPG skill or stat might literally
+          move the player along an axis of ‘experience’, which represents both the player’s ludic progression and the
+          narrative of their character’s growth.</p>
+        <p>Paths and axes within a dialogue system can also be explored through means other than dialogue choice. The
+          much-lauded <em>Hades</em> (Supergiant Games, 2020) showcases how every one of a player’s in-game actions can
+          be folded into dialogue paths and axes - its looping structure allows for multiple quest paths to be pursued
+          simultaneously, with the events of each run biasing the player into different relationship axes with its cast
+          of NPCs.</p>
+        <p>Less commonly, <em>axes</em> can be emotional or inflective as well as intentional - <em>how</em> a player
+          chooses to ‘perform’ a dialogue choice. Background- or alignment-specific choices in RPGs might not provide
+          different dialogue paths, but they can provide a flavourful <em>axis</em> into which a role-playing-savvy
+          player can lean (<em>Vampire: The Masquerade: Bloodlines</em>- Troika Games, 2004).</p>
+        <p><em>Presentational: On-screen / off-screen</em></p>
+        <p>Voiceover and subtitling can sometimes reference an offscreen character (or, more often, a narrator), but
+          this technique is rarely used in interactive dialogue sequences (‘overheard’ dialogue is covered in
+          <em>acoustic space</em>). Dialogue does need to be presented to the player, after all, and games generally
+          only have the medium of screen to do this. The ludic element of a dialogue system, however, might be said to
+          exist ‘off-screen’; systems like NPC attitude and quest progression - though often displayed to the player in
+          contemporary games - for many years were hidden. Whether the narrative or ludic consequences of dialogue
+          choices are made available ‘on-screen’ is also a design consideration, as revealing or hinting at these
+          consequences expands the story space, and can either complicate or oversimplify a player’s decision-making
+          process (see: colour-coded choices for Paragon/Renegade).
+        </p>
+        <p><em>Presentational: Acoustic space</em></p>
+        <p>The acoustic space, as it applies to dialogue sequences and systems, is most commonly connected to voice
+          acting and cutscene underscore, but even before this became common, games were using sound cues to indicate
+          that dialogue was being ‘spoken.’ The whirring or mumbling of text ‘loading’ will be familiar to players of
+          JRPGs, and this approach remains common as a simple way for the dialogue system to offer the player feedback.
+        </p>
+        <p>Entering dialogue sequences often subtly alters the acoustic space of the game, muffling environmental sounds
+          to focus player attention. In voiced 3D games like <em>Mass Effect</em>, for example, the player experiences
+          the introductory lines of a dialogue sequence through the same fully multidirectional sound space as the rest
+          of the game. However, once the scene gets going (in <em>Mass Effect</em>’s case, when the visual aspect ratio
+          changes and the dynamic camera system starts ‘directing’) the game opts for a more traditionally cinematic
+          stereo recording.</p>
+        <p><em>Presentational: Perspective</em></p>
+        <p>Perspective is a term most associated in game design with camera perspective - first-person, third-person,
+          isometric etc. - and can have a significant impact on the player’s involvement (Calleja, 2011). The
+          first-person camera ‘reinforces the psychological perspective of the protagonist,’ while observing one’s
+          character speak and act through a third-person perspective can encourage more objective, thematically focused
+          involvement (Wei et al, 2010). The breaking of a player-focused third- or first-person perspective to a more
+          cinematically familiar camera technique during dialogue will be familiar to anyone who has played recent AAA
+          games, but the approach is hardly unique to blockbuster releases. <em>Divinity: Original Sin</em>’s mild
+          zooming in might be one example (Larian Studios, 2014); <em>Deus Ex</em> - a first person game - enters a
+          cinematic third person mode during dialogue sequences, complete with a narrowing of aspect ratio (Ion Storm,
+          2001). <em>Baldur’s Gate I &amp; II</em> feature few perspective changes during dialogue (although the camera
+          will sometimes ‘snap’ to above a ‘speaking’ character model), but <em>Baldur’s Gate 3</em> makes use of an
+          entire cinematics team to both procedurally- and hand-animate the camera movement of every dialogue scene.</p>
+        <p>A different interpretation of dialogic perspective might be found in the writing itself - here we could
+          revisit the internal and external voices of <em>Disco Elysium</em>, but also the hard-boiled narration of
+          <em>Max Payne</em>. Shifting interactive perspective (say, making choices as one character and then making
+          choices as another) is relatively rare; though it does occur in games with multiple playable protagonists,
+          with these characters sometimes talking to each other, switching mid-sequence is unheard of. Even strategic
+          games like <em>Frostpunk</em> (11bit Studios, 2018), <em>Humankind</em> (Amplitude Studios, 2021) and
+          <em>Crusader Kings II</em> (Paradox Interactive, 2012), with relatively simplistic dialogue systems, still
+          maintain a unity of player perspective, by casting them as the leader of a post-apocalyptic community,
+          pre-modern civilisation or feudal tribe respectively.
+        </p>
+        <p><em>Presentational: Spatial segmentation</em></p>
+        <p>This category of operational space refers to the ‘division of the gameworld into different spaces that also
+          partition gameplay’ (Zagal &amp; Mateas, 2007). In most games, we would consider these spaces to be
+          differently designed biomes (if topographically connected) or levels (if topographically separate), but
+          applying it to dialogue throws up a number of interesting questions. Is the dialogue segmented from the
+          gameworld? Does a player ‘enter’ this new subspace, and what happens when they do? We have already touched on
+          shifting aspect ratios signifying the presentational transition into dialogue sequence space, but mechanical
+          affordances can also segment space. The player knows, wheeling into one of <em>Sunless Sea</em>’s (Failbetter
+          Games, 2015) ports, that the monsters and pirates of the Underzee won’t harm them, as their control scheme
+          changes from real-time mouse-and-keyboard to turn-based point-and-click. And once inside a dialogue sequence,
+          where are the barriers, the exit points? In some games, dialogue can be halted by moving away from an NPC
+          model, blending the subspace transition; at the close of a conversation in <em>Baldur’s Gate</em>, the ‘End
+          Dialogue’ button does the obvious, and in many games an option that ends a dialogue will be subtitled
+          similarly.</p>
+        <p>A dialogue system may even allow for multiple segmented spaces within itself. Some games include ‘mini-games’
+          within dialogue, and the representation of ludic mechanics such as dice-rolling are often represented in new
+          ‘spaces,’ or at least in different coloured text.<em>Tyranny</em> (Obsidian Entertainment, 2016) and
+          <em>Pillars of Eternity</em> innovate with mouse-over, hyperlink-style text within their dialogue scenes,
+          deepening lore, delivering details your character observes or, in one memorable case, representing an NPC
+          communicating with you psychically.
+        </p>
+        <p><em>Screen interface</em></p>
+        <p>Wei et al (2010) identify another category for presentational space - screen interface - but, given its
+          overwhelming use as a dialogue delivery system, I have chosen to consider it separately.</p>
+        <h2 id="game-dialogue--interface">Game Dialogue &amp; Interface</h2>
+        <p>From the earliest days of text-based games, interface has played an important role in how dialogue has been
+          interpreted. Parser-based games like <em>Colossal Cave Adventure</em> (Crowther &amp; Woods, 1977) and
+          <em>Zork</em> (Infocom, 1980) were played within the context of early computers’ command-line interfaces.
+          Point and click adventure games like <em>The Secret of Monkey Island</em> (Lucasfilm Games, 1990) or
+          <em>Discworld Noir</em> (Perfect Entertainment, 1999), with their ‘token-based’ dialogue and inventory systems
+          (Bateman, 2007), used a graphical UI to communicate the player’s context-sensitive options. Even in
+          contemporary games with entirely voiced dialogue, lines are by default subtitled or superimposed in writing on
+          the UI, or else paraphrased in flashing HUD-bound mission objective text.
+        </p>
+        <p>Kristine Jorgenson, in her 2013 book Gameworld Interfaces, translates the ontological concept of ‘frames’ to
+          the simulated world of digital games, and specifically user interfaces. The frames existing in game UI design,
+          she offers, can be both interdependent and interposed. Jorgenson contends that ‘game-system information might
+          not just be <em>integrated</em> [internal to the gameworld] or <em>superimposed</em> [part of an overlay]; it
+          might also be <em>fictional</em> [diegetic] or <em>ludic</em> [connected to game systems] and
+          <em>emphatic</em> [adding/highlighting information] or <em>ecological</em> [naturally containing information];
+          and the two elements of each category might be blended as well.’ Game dialogue interfaces make use of a wide
+          range of these frames, often adding or removing during gameplay as necessary (this process is called up- or
+          downkeying).
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Interface Type</th>
+              <th>Examples in dialogue design</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Integrated, Fictional, Ecological</td>
+              <td>Emails in <em>Uplink</em> / messages we see on a device that exists within the gameworld; <em>Captain
+                  Blood</em>’s spaceship bridge (Exxos, 1988)</td>
+            </tr>
+            <tr>
+              <td>Integrated, Fictional, Emphatic</td>
+              <td>Text appearing above characters’ heads (<em>Fallout</em>)</td>
+            </tr>
+            <tr>
+              <td>Integrated, Ludic, Ecological</td>
+              <td>Relatively rare in dialogue design!</td>
+            </tr>
+            <tr>
+              <td>Integrated, Ludic, Emphatic</td>
+              <td>Exclamation point or similar above character (in gameworld) indicating expression or reaction</td>
+            </tr>
+            <tr>
+              <td>Superimposed, Fictional, Ecological</td>
+              <td>Subtitled unvoiced dialogue, written and unvoiced dialogue within a UI text box, messages on a device
+                we do not see through the character’s ‘eyes’ - <em>GTA’s</em> pager/cell phone</td>
+            </tr>
+            <tr>
+              <td>Superimposed, Fictional, Emphatic</td>
+              <td>Subtitled voiced dialogue, first-person ‘diegetic’ HUDs (in-helmet text read-outs); animated character
+                ‘headshots’ (<em>Tyranny</em>; visual novels)</td>
+            </tr>
+            <tr>
+              <td>Superimposed, Ludic, Ecological</td>
+              <td>Descriptions of character actions in a text box (‘you attack the gnoll’)</td>
+            </tr>
+            <tr>
+              <td>Superimposed, Ludic, Emphatic</td>
+              <td>Descriptions of dice rolls / outcomes or items / experience gained</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><em>Table B: examples of gameworld interface frames in dialogue designs</em></p>
+        <p>Dialogue - when it is represented within a game’s interface - is generally presented through
+          <em>superimposed</em> subtitles, or else in a <em>superimposed</em> text box. A dialogue system consisting of
+          textual communication over a phone interface, however, would be considered <em>integrated</em>. Dialogue is of
+          course generally <em>fictional</em>, as it represents something diegetic to the game’s story, though when
+          dialogue systems include skill thresholds or other mechanical signifiers, it can be said to be <em>ludic</em>.
+          Jorgenson acknowledges the *liminality* between <em>fictional</em> and <em>ludic</em> frames, stating that
+          ‘when props and other kinds of representation [which we can here take to include dialogue] support a
+          fictionally coherent world, the primary framework for understanding these features is fiction, but when the
+          representations break with fiction and focus on their own ludic value, the primary framework for understanding
+          them is ludic.’ ‘Clementine will remember this’ is a cogent example of an otherwise <em>superimposed</em> and
+          <em>fictional</em> dialogue interface providing <em>ludic</em> information (Telltale Games, 2012). A
+          subtitling interface can be characterised as <em>emphatic</em>, as it highlights information that exists in
+          the acoustic gameworld, but when the dialogue is primarily designed to be read it could be said to be
+          <em>ecological</em> - indeed, given CRPGs historical design links to Choose Your Own Adventure novels,
+          everything <em>other</em> than their written text might be said to be <em>emphatic</em>.
+        </p>
+        <p>Of critical importance in dialogue interface design is its position relative to other elements of the
+          gameworld and of game UI. If the entire dialogue system is superimposed, does it sit <em>within</em> the
+          gameworld (<em>World of Warcraft</em>) or does it entirely <em>frame</em> it (<em>Planescape: Torment</em> -
+          Black Isle Entertainment, 1999)? Is the dialogue interface <em>constant</em> (visual novels) or
+          <em>context-sensitive</em> (<em>The Elder Scrolls V: Skyrim</em> - Bethesda Game Studios, 2011)? And while it
+          is good practice to design a consistent and cohesive aesthetic for a game’s UI, it is important to consider
+          with which other elements a player will associate a dialogue interface. When it is visually and mechanically
+          indistinguishable from inventory, character customisation or menu UI, what is that teaching the player with
+          regards to where a dialogue interface sits in relation to other forms of gameplay?
+        </p>
+        <h2 id="case-studies">Case Studies</h2>
+        <p>In the penultimate section of this paper I will outline three recent narrative games, and how the
+          relationships of their dialogue systems to - variously -<em>time</em>, <em>space</em> and <em>interface</em>
+          heighten narrative and ludic involvement by mitigating the disruption of flow. While <em>time</em>,
+          <em>space</em> and <em>interface</em> are critical elements in the dialogic innovation of all three games, I
+          have taken the liberty of aligning each example with the element it most strongly evinces in its design. The
+          player’s experience, of course, is mediated through all three elements.
+        </p>
+        <h3 id="time---signs-of-the-sojourner">Time - Signs of the Sojourner</h3>
+        <p><em>Signs of the Sojourner</em> is a 2018 narrative deck-building game developed and published by Echodog
+          Games. Set in a post-apocalyptic landscape, the player joins a caravan of merchants, encountering other
+          merchants and artisans in the surrounding villages in the hopes of supplying the trading post of their
+          recently deceased mother. Between encounters, dialogue interactivity is on the light side - the player is
+          given the choice of whether or not to enter conversation with NPCs in the settlement; no dialogue options are
+          given to the player; the NPC is the only character that ‘speaks’. But within an encounter, the dialogue system
+          becomes more complex. Players still aren’t afforded dialogue ‘options’; rather, they interact with the NPC
+          through a turn-based symbol-matching card game, the goal being to match a chain of symbols to create an
+          ‘accord,’ and avoid mismatches that might create ‘discord.’ If three accords are created, the dialogue ends
+          positively; otherwise, it ends acrimoniously. Regardless of the player’s performance in each encounter, they
+          must replace one card in their 10-card deck with one of the NPC’s, both symbolically internalising something
+          they’ve learned from that character and altering their relationship to the dialogue system going forward,
+          encouraging the player to identify closely with their role, and experience a <em>loss of
+            self-consciousness</em>. This connection between memory, character and deck-building means that it isn’t
+          just the written dialogue that iterates through the different acts, it’s the dialogue system itself - the
+          player’s ability to interact with the system is predicated on cards they bring from encounters. Some of these
+          cards will last for only a handful of encounters, but some will form the core of a strategically formed deck
+          over the course of an entire act, or the entire game, making the player reflect <em>diachronously</em> on the
+          conversations and characters from which they took the cards they now use. This inversion of the usual
+          action/dialogue interactive balance (gameworld navigation is as basic as inventory management) evolves
+          dialogue interaction into a <em>challenging activity requiring skill.</em></p>
+        <p>While the time signature of the <em>written</em> <em>dialogue</em> could be defined as <em>summary</em>, the
+          player’s experience of a dialogue sequence is far more akin to <em>stretch</em> - the intense, dilated version
+          of narrative time. During each suspended moment of dialogic negotiation (itself an <em>altered sense of
+            time</em>), the player achieves a <em>merging of action and awareness</em> as they reflect on NPC animation,
+          musical cues, and strategic considerations. <em>Direct, immediate feedback</em> is achieved through the
+          matching process, and with the game’s reliance on imperfect information (Costikyan, 2013), the dramatic
+          tension heightens with each new draw, each player action and each NPC card placement - encouraging
+          <em>concentration on the task at hand</em>.
+        </p>
+        <p>Understanding for how long a dialogue will continue helps players define a <em>clear goal</em> for the
+          immediate moment, and <em>Signs of the Sojourner</em>’s card game mechanics help facilitate this. Conversation
+          ‘rounds’ can last for a maximum of five turns; an entire dialogue sequence for a maximum of fifteen turns (to
+          reach 3 accords). The clarity and predictability of this structure is repeated in the larger narrative, with
+          the game organised into five ‘acts’; each act represents a different caravan journey starting from Bartow,
+          proceeding along a route of the player’s choosing, and returning to Bartow. This <em>ring</em>-shaped
+          narrative layout, coupled with the round- and turn-based time signature of encounters, awakens the player to
+          the <em>frequency</em> of dialogue - the dialogue sequences might be seen as singular or iterative, depending
+          on whether the player is able to make any headway with individual NPCs, but the route the player takes through
+          the game’s five acts (ie whether they revisit locations) defines whether dialogue is repetitive. It’s possible
+          to have an almost entirely <em>singular</em> experience, if the player refuses to revisit locations.</p>
+        <p><em>Signs of the Sojourner</em> finds an elegant, flow-friendly way to reshape the <em>discourse time</em> of
+          dialogue, and demonstrates how occupying a player with even mildly challenging dialogue mechanics can deepen
+          narrative involvement.</p>
+        <h3 id="space---oxenfree">Space - Oxenfree</h3>
+        <p><em>Oxenfree</em> (2016), developed by Night School Studios, is a 2D narrative adventure game set in a
+          self-confessedly Spielbergian world of teenage investigators, mysteries, gadgets and ghosts.
+          The player takes on the role of Alex, a young woman who, along with a gaggle of friends, explores a mysterious
+          island. Dialogue is fully voiced, and the game uses an abstract response system for player dialogue choice,
+          generally presenting between two and three responses. So far, so <em>Mass Effect</em>. However, it also allows
+          the player to remain silent, to walk away from an interaction, to continue while moving, and to use any
+          dialogue option as an interrupt. Unlike in traditional narrative-led games, in which NPCs react to the
+          selection of content, <em>Oxenfree</em>’s cast will react differently depending on the player’s spatial and
+          rhythmic choices. Not all dialogue sequences are guaranteed to appear in a given playthrough either;
+          developers Night School Studios developed an AI system to select dialogue sequences salient to the player’s
+          prior behaviour, as well as their position and the amount of time elapsed since the last dialogue sequence.
+          The topographical layout of the dialogue system is thus far more <em>open</em> than might be first
+          anticipated, and maps dynamically onto the game’s more <em>networked</em> environmental layout. By
+          disconnecting some of the narrative layout from the environmental layout, <em>Oxenfree</em> even alleviates
+          some of the position-locked predictability from which its point-and-click forebears suffer.</p>
+        <p>The player, in contrast to more <em>hub-and-spoke</em>-influenced dialogue designs, is locked into a
+          <em>unidirectional path</em> - like in the films from which it draws inspiration, <em>Oxenfree</em>’s
+          narrative progression is fast-paced, and there are few options to have directions or information repeated.
+          However, players can lean into different axes with their dialogue choices, and accentuate those choices
+          through interruption or silence.<em>Oxenfree</em> makes little differentiation between its dialogic acoustic
+          space and its sonic environment (radio tuning mechanic aside), and this focus, coupled with the reduced
+          friction between gameworld and dialogue interfaces, encourages <em>concentration on the task at hand</em>.
+        </p>
+        <p><em>Perspective</em> is locked to Alex, the player character, and the game almost never removes the player’s
+          <em>mobility</em>, increasing their <em>sense of control</em>. With direct player control almost never
+          interrupted, the game avoids the pitfalls of other games covering the <em>spatial segmentation</em> of
+          dialogue and play - <em>action and awareness</em> are thus encouraged to merge. Being able to listen, ignore,
+          move away etc during dialogue also affords moments of <em>spatial opposition</em> akin to the performed stage
+          directions of a playscript. The invitation to perform <em>spatially</em> rather than just ‘vocally’ further
+          embodies the player in their character, encouraging a <em>loss of self-consciousness</em>. Interrupting
+          provides an immediate and fulsome sense of <em>feedback</em>, and while immersed in dialogue the player can
+          also choose to carry out actions within the game world that would traditionally be separated from dialogue
+          sequences - tuning a radio while talking, for example. While not necessary for completion or indeed success,
+          the affordances for players who <em>want</em> to multitask in this way opens up dialogue selection to be
+          approached as a <em>challenging activity requiring skill</em>.
+        </p>
+        <p><em>Oxenfree</em>, by affording its dialogue system the same design and interactive affordances as its
+          spatial environment, paves the way for far more involving 2D narrative game experiences.</p>
+        <h3 id="interface---we-should-talk">Interface - We Should Talk</h3>
+        <p><em>We Should Talk</em> (2018) is a short narrative game designed by Carol Mertz that features a unique,
+          ‘intention’-based dialogue mechanic. The player spends an evening at a bar, flitting between conversations
+          with other patrons of the bar, and texting with their partner (who is at home). The player and the patron NPCs
+          are presented as animated 3D models, while the player’s interactions with their partner happens through a text
+          message interface on their phone. Dialogue is presented in a cascade down the middle of the scene - modelled
+          after contemporary messaging UI - either filling the gap between the player character and their animated scene
+          partner or else filling the screen of the player character’s phone. This interface elegantly bridges the gap
+          between <em>fictional</em> and <em>ludic</em>, <em>ecological</em> and <em>emphatic</em>; the ‘voiced’ lines
+          are <em>ecological</em>, but the intentional modifiers - which make up the main interactive mechanic
+          -<em>emphatic</em> (and where the real ludic interaction lies). Instead of selecting <em>what</em> their
+          character will say, the player is tasked with committing to an intention - what they <em>mean</em> by what
+          they say. On an even more microscopic level, the player must determine the emotional intention of each
+          <em>clause</em>, rather than the line as a whole; an interaction that would usually consist of a single button
+          press is now a series of considered and cascading linguistic and psychological decisions. This visual
+          separation of the dialogue’s semantic elements, in contrast to <em>Oxenfree</em>’s more instinctual abstract
+          response options (and its seductively feedback-heavy interruption mechanic), encourages a level of emotional
+          ‘close reading’ normally not seen in games, largely due to the analytical ‘slowdown’ it can engender in
+          gameplay. Resources like <em>The Game Narrative Toolbox</em> (Heussner et al, 2015), for example, guide
+          writers towards clarity in dialogue over almost all other considerations, in order that the majority of
+          players parse the emotional intention of lines more easily, and to guard against players feeling a lack of
+          control over their character. But by framing <em>intention</em> as the ludic element of the game, <em>We
+            Should Talk</em> turns the parsing of dialogue choices into a <em>challenging activity requiring skill</em>.
+          It also means that when the player’s emotional intention is ‘misread,’ it feels like the result of the
+          narrative rather than a ‘break’ in ludic-narrative cohesion. This avoids the loss of control sometimes
+          associated with more emotionally involved games.
+        </p>
+        <p>Of course, by designing an interface that encourages the scrutiny of each line in this way, Mertz naturally
+          increases <em>concentration on the task at hand</em>, but by <em>framing</em> that interface in an
+          <em>integrated</em> and <em>fictional</em> way - the hyperfamiliar cell phone - she hooks into both the
+          <em>direct feedback loop</em> and the <em>time-altering</em> properties of that device’s design. The increased
+          character animation, environmental animation, and background audio of the ‘in-person’ dialogue sequences, when
+          compared to the more statically presented phone interface, draw the player’s attention to this <em>altered
+            sense of time</em>, and recontextualizes the dialogue cascade as <em>superimposed</em> and <em>emphatic</em>
+          - a neat metaphorical frame for the emptiness of these one-sided conversations. Indeed, this feeling of being
+          wilfully misunderstood in person, but heard clearly on text, creates a <em>clear series of narrative and
+            emotional goals</em> leading the player back to their phone. The end result is a surprising granularity in
+          emotional player activity. This, coupled with the visual and tactile familiarity of the game interface,
+          increases the player’s feeling of being in-role and likely encourages a <em>loss of self-consciousness</em>.
+        </p>
+        <p><em>We Should Talk</em> iterates on the standard dialogue interface to create an emotionally and narratively
+          involving experience. Though short in length, it demonstrates that a granular approach to text selection can
+          facilitate flow, and points the way for further developments in narrative interface design.</p>
+        <h2 id="where-next---design-recommendations">Where Next? - Design Recommendations</h2>
+        <p>By applying the lenses of time, space and interface to the above three case studies, it is evident that
+          dialogue systems which deviate from the ‘standard dialogue meta’ can successfully facilitate flow in players.
+          However, mimicking the designs of these games will only result in their absorption into a new standard
+          dialogue meta. What follows is a list of new avenues for dialogue design, inspired by the work undertaken in
+          this paper.</p>
+        <h3 id="time">Time</h3>
+        <p><em>Frequency</em> <em>(singular)</em> - despite the prevalence of duologues (plays between two people) in
+          theatre, games writers have seemed reluctant to explore a <em>singular</em> dialogue system that might
+          represent two people talking for an entire game. Perhaps this is a function of games designers leaning into
+          the format’s strengths, multiple characters being cheaper to add than live performers are to hire, but a game
+          of significant length staging a conversation between only two characters feels oddly radical.</p>
+        <p><em>Frequency (repetitive)</em> - innovation can often be found in pushing traditional concepts to their
+          limits, and a game which locks a player into a repeating dialogue sequence that they must learn to escape
+          might have quite the diachronous effect.</p>
+        <p><em>Speed (stretch) - Signs of the Sojourner</em> has shown how powerful slowing down a player’s experience
+          of dialogue can be; using <em>stretch</em> to increase a player’s reaction time even further, maybe
+          encouraging the reading of body language in animated characters or the close analysis of, as in <em>We Should
+            Talk</em>, clauses or even individual words, might be a productive path.</p>
+        <h3 id="space">Space</h3>
+        <p><em>Layout (parallel)</em> - despite the existence of split-screen gaming, one layout barely touched upon in
+          dialogue design is <em>parallel</em>. An interactive fiction version could be easily prototyped using Ink, in
+          which, say, two conversations progress down either side of the screen and it is up to the players how long
+          they remain ‘in control’ of each one. Alternatively, choices in one could ‘rewrite’ the other, as when films
+          flash back to show a different perspective on events.</p>
+        <p><em>Spatial opposition</em> - as raised in this paper, a system for the procedural varying of line length and
+          dialogue shape could easily be developed. A ‘stamina’ system could fuel the length or intensity of a player’s
+          lines (more stamina required to deliver longer lines), and the dialogue system could respond by matching
+          intensity during ‘rising’ action and opposing it during conflict.</p>
+        <p><em>Spatial segmentation</em> - though identified in this paper as a site of flow disruption, a possible
+          solution to this might be to <em>maximise</em> the feeling of segmentation rather than <em>minimise</em> it.
+          The first act of the game might not include a dialogue system at all - maybe it’s an exploration of a
+          dream-like 3D environment; the second might be <em>only</em> a dialogue system, reflecting on the player’s
+          experience in the first; the third could unify the two, or return to the first but inflected with information
+          from the second.</p>
+        <h3 id="interface">Interface</h3>
+        <p><em>Integrated, fictional, ecological</em> - dialogue systems that evince these interface frames are few and
+          far between, but perhaps, given recent advances in shader technology, it might be possible for a game’s
+          dialogue to be delivered as a texture on a 3D environment. <em>Gone Home</em> (The Fullbright Company, 2013),
+          but with the found text written on every object in the house; a player might interact by ‘writing’ their
+          character’s inner monologue onto the surface, marking the house with their own thoughts.</p>
+        <p><em>Integrated, ludic, emphatic</em> - a dialogue system that stages the process of editing, making each word
+          a game piece that might be interacted with by the player/editor in some way - red strikethrough for a
+          suggested cut, green highlighter for an enthusiastic remark. The next draft returns with certain changes made,
+          others not, and the palimpsestic effect of these sequences builds up a relationship between the player/editor
+          and the writer over time, although they never directly speak.</p>
+        <h2 id="conclusion">Conclusion</h2>
+        <p>Though game academics have long engaged (however contentiously) with ideas of narrative, little attention has
+          been paid specifically to the design of dialogue systems and sequences which, though far from the only
+          deliverers of game narrative, are certainly some of the more audience-familiar. By identifying and
+          appropriating multiple established structures for considering game narrative and general design - Wei, Calvert
+          and Bizzocchi’s work on game narrative time and space; Jorgenson’s gameworld interface theory - this paper
+          ‘translates’ them via a wide range of examples onto the specific field of game dialogue design. While some
+          categorisations fit only loosely (and might signal the need for a wider sample, or further research), others
+          provide compelling opportunities for close analysis of dialogue systems and sequences. A vocabulary for
+          analysing dialogue systems through time, space and interface is successfully developed, and by extending these
+          structures into a broad spectrum analysis of the ‘standard dialogue meta’, the sites most commonly disruptive
+          to flow are easily identified. Three case studies, each focusing on a different structure, demonstrate that
+          the innovation of these dialogue designs lies in these structures themselves: if time, space and interface are
+          indispensable tools for analysing dialogue systems, they may also be crucial tools for designing them.</p>
+        <p>Finally, using observations noted during research, writing and the performance of case studies, this paper
+          extrapolates a number of design recommendations and possibilities for innovative dialogue systems. At least
+          one of these ideas will form the basis of the writer’s final project, in fulfilment of their Masters degree,
+          but their hope is that the rest might provide inspiration to other designers looking to further investigate
+          the disruptive space between narrative and play.</p>
+        <h2 id="key-sources">Key Sources</h2>
+        <p>Csikszentmihalyi, M. (1990) <em>Flow: the Psychology of Optimal Experience</em>. NY: Harper Perennial.</p>
+        <p>Echodog Games (2020) <em>Signs of the Sojourner</em> [Video game]. Echodog Games.</p>
+        <p>Jorgenson, K. (2013) <em>Gameworld Interfaces</em>. Cambridge MA: MIT Press.</p>
+        <p>Mertz, C. (2018) <em>We Should Talk</em> [Video game]. Mertz, C.</p>
+        <p>Night School Studio (2016). <em>Oxenfree</em> [Video game]. Night School Studio.</p>
+        <p>Wei, H., Bizzocchi, J. &amp; Calvert, T. (2010) “Time and Space in Digital Game Storytelling” in
+          <em>International Journal of Computer Games Technology,</em> Vol 2010.
+        </p>
+        <h2 id="bibliography">Bibliography</h2>
+        <p>Aarseth, E. (2001) “Computer game studies, year one” in <em>Game Studies</em>. 1(1), pp1–15.</p>
+        <p>Aarseth, E. (2007) “Allegories of space: the question of spatiality in computer games,” in <em>Space Time
+            Play: Computer Games, Architecture and Urbanism: The Next Level</em>, von Borries, F., Walz, S. P. and
+          Bottger, M. Eds., pp. 44–47, Berlin: Birkha ̈user.</p>
+        <p>Adams, E. (2010) <em>Fundamentals of Game Design</em>. 2nd Ed. Berkeley, CA: New Riders.</p>
+        <p>Austin, J. L. (1962) <em>How To Do Things With Words</em>. Oxford: Clarendon Press.</p>
+        <p>Bal, M. (2009) <em>Narratology: Introduction to the Theory of Narrative</em>. 3rd edition, Toronto:
+          University of Toronto Press.</p>
+        <p>Bateman, C. (2007) <em>Game writing : narrative skills for videogames</em>. Boston, MA : Charles River Media.
+        </p>
+        <p>Bauer, R., Suter, B. &amp; Kocher, M. (Eds) (2021) <em>Narrative Mechanics.</em> Bielefeld, transcript
+          Verlag.</p>
+        <p>Bauer, R. &amp; Suter, B. (2021) ‘Narrative Mechanics: Strategies and Meanings in Games and Real Life’ in
+          <em>Narrative Mechanics</em>, Bauer, R., Suter, B. &amp; Kocher, M (Eds). Bielefeld, transcript Verlag.
+        </p>
+        <p>Boluk, S. &amp; LeMieux, P. (2017) <em>Metagaming: Playing, Competing, Spectating, Cheating, Trading, Making,
+            and Breaking Videogames</em>. Minneapolis: University of Minnesota Press.</p>
+        <p>Bridgeman, T. (2007) “Time and space,” in <em>The Cambridge Companion to Narrative</em>, Herman, D. Ed., pp.
+          52–65, Cambridge, MA: Cambridge University Press.</p>
+        <p>Brusk, J. &amp; Bjork, S. (2009) Gameplay Design Patterns for Game Dialogues. Proceedings of DiGRA 2009.</p>
+        <p>Calleja, G. (2009) ‘Experiential Narrative in Game Environments.’ <em>DiGRA 2009 Conference Proceedings:
+            Breaking New Ground: Innovation in Games, Play, Practice and Theory.</em></p>
+        <p>Calleja, G. (2011) ‘Emotional involvement in digital games.’ <em>International Journal of Arts and
+            Technology</em>. 4. pp 19 - 32.</p>
+        <p>Chatman, S. (1995) <em>Story and Discourse: Narrative Structure in Fiction and Film</em>. Ithaca: Cornell
+          University Press.</p>
+        <p>Chen, J. (2007) “Flow in Games” &lt;<a
+            href="https://www.jenovachen.com/flowingames/thesis.htm">https://www.jenovachen.com/flowingames/thesis.htm</a>&gt;
+          (Accessed on: July 16 2021).</p>
+        <p>Collins (2021) <em>Dialogue.</em> &lt;<a
+            href="https://www.collinsdictionary.com/dictionary/english/dialogue">https://www.collinsdictionary.com/dictionary/english/dialogue</a>&gt;
+          (Accessed on: June 25th 2021)</p>
+        <p>Costikyan, G. (2013) <em>Uncertainty in Games.</em> Cambridge, Massachusett: MIT Press.</p>
+        <p>DiGRA (2012) <em>Digital Library</em> &lt;<a
+            href="http://www.digra.org/digital-library/">http://www.digra.org/digital-library/</a>&gt; (Accessed on: 25
+          June 2021).</p>
+        <p>Echodog Games (2019) <em>What’s a Narrative Card Game Anyway.</em>&lt;<a
+            href="https://www.echodoggames.com/blog/2019/04/19/what-s-a-narrative-card-game-anyway">https://www.echodoggames.com/blog/2019/04/19/what-s-a-narrative-card-game-anyway</a>&gt;
+          (Accessed 19 June 2021).</p>
+        <p>Echodog Games (2019) <em>Prototyping New Features in Signs of the Sojourner.</em>&lt;<a
+            href="https://www.echodoggames.com/blog/2019/10/14/prototyping-new-features-in-signs-of-the-sojourner">https://www.echodoggames.com/blog/2019/10/14/prototyping-new-features-in-signs-of-the-sojourner</a>&gt;
+          (Accessed 19 June 2021).</p>
+        <p>Edgar, D. (2021) <em>How Plays Work</em>. London: Nick Hern Books.</p>
+        <p>Ellison, B. (2008) <em>Defining Dialogue Systems.</em> 8 July 2008. &lt;<a
+            href="https://www.gamasutra.com/view/feature/3719/defining_dialogue_systems.php">https://www.gamasutra.com/view/feature/3719/defining_dialogue_systems.php</a>&gt;
+          (Accessed 19 July 2021).</p>
+        <p>Eskelinen, M. (2004) “Towards computer game studies,” in <em>First Person: New Media as Story, Performance
+            and Game</em>, Wardrip-Fruin, N. and Harrigan, P., Eds., pp. 36–44, Cambridge, MA: MIT Press.</p>
+        <p>Fernandez-Manjon, B., Fernandez-Vara, C., &amp; Manero, B. (2013) ‘Stanislavky’s System as a Game Design
+          Method: A Case Study.’ <em>DiGRA 2013 Conference Proceedings: DeFragging Games Studios.</em></p>
+        <p>Fernández-Vara, C. (2014). <em>Introduction to game analysis</em>. New York: Routledge.</p>
+        <p>Frasca, G. (2004). ‘Videogames of the Oppressed: Critical Thinking, Education Tolerance, and Other Trivial
+          Issues.’ In N. Wardrip-Fruin &amp; P. Harrigan (Eds.), <em>First Person: New Media as Story, Performance, and
+            Game</em>. Cambridge, MA: MIT Press.</p>
+        <p>Herman, D. (2002) <em>Story Logic: Problems and Possibilities of Narrative</em>. Lincoln: University of
+          Nebraska Press.</p>
+        <p>Heussner, T., Finley, T., Hepler, J. &amp; Lemay, A. (2015) <em>The Game Narrative Toolbox</em>. London:
+          Routledge.</p>
+        <p>Hitchens, M.(2006) “Time and computer games or “no, that’s not what happened,” in <em>Proceedings of the 3rd
+            Australasian Conference on Interactive Entertainment</em>, pp. 44–51.</p>
+        <p>Ingold, J. (2018) <em>Sparkling Dialogue: A Masterclass.</em> 1 December 2018. &lt;<a
+            href="https://www.youtube.com/watch?v=_vRfNtvFVRo">https://www.youtube.com/watch?v=_vRfNtvFVRo</a>&gt;
+          (Accessed June 21st 2021).</p>
+        <p>Ingold, J. (2019) <em>Designing Investigate Conversations.</em> 23 October 2019. &lt;<a
+            href="https://www.gamasutra.com/blogs/JonIngold/20191023/352685/Designing_Investigate_Conversations.php">https://www.gamasutra.com/blogs/JonIngold/20191023/352685/Designing_Investigate_Conversations.php</a>&gt;
+          (Accessed June 21st 2021).</p>
+        <p>Ingold, J. (2020) <em>Dreaming Spires: Dynamic Narrative, Layer by Layer.</em> 22 May 2020 &lt;<a
+            href="https://www.gamasutra.com/blogs/JonIngold/20200522/363472/Dreaming_Spires_Dynamic_Narrative_Layer_by_Layer.php">https://www.gamasutra.com/blogs/JonIngold/20200522/363472/Dreaming_Spires_Dynamic_Narrative_Layer_by_Layer.php</a>&gt;
+          (Accessed June 21st 2021).</p>
+        <p>Iser, W. (1991) <em>The act of reading: A theory of aesthetic response.</em> Baltimore: Johns Hopkins Univ.
+          Press.</p>
+        <p>Jayemanne, D. (2020) “Chronotypology: a Comparative Method For Analysing Game Time” in <em>Games and
+            Culture</em> Vol 15, Issue 7.</p>
+        <p>Jenkins, H. (2004) “Game design as narrative architecture,” in <em>First Person: New Media as Story,
+            Performance, and Game</em>, Wardrip-Fruin, N. and Harrigan, P., Eds., pp. 118–130, Cambridge, MA: MIT Press.
+        </p>
+        <p>Juul, J. (2001) “Games telling stories”, in <em>Game Studies</em>. 1(1), pp1–12.</p>
+        <p>Juul, J. (2004) “Introduction to game time,” in <em>First Person: New Media as Story, Performance, and
+            Game</em>, Wardrip-Fruin, N. and Harrigan, P., Eds., pp. 131–142, Cambridge, MA: MIT Press.</p>
+        <p>Juul, J. (2005) <em>Half-Real: Video Games between Real Rules and Fictional Worlds</em>. Cambridge MA: MIT
+          Press.</p>
+        <p>Juul, J. (2007). ‘A certain level of abstraction. Situated play.’ <em>DiGRA 2007 conference proceedings</em>
+          (pp. 510–515). Citeseer.</p>
+        <p>Koenitz, H. (2018) “Narrative in Video Games” in <em>Encyclopedia of Computer Graphics and Games</em>, Lee,
+          N. (Ed).</p>
+        <p>Lindley, C. (2004) <em>Narrative, Game Play, and Alternative Time Structures for Virtual Environments</em>.
+          Springer.</p>
+        <p>Mateas, M. (2004). A Preliminary Poetics for Interactive Drama and Games. In N. Wardrip-Fruin &amp; P.
+          Harrigan (Eds.), <em>First Person: New Media As Story, Performance, and Game</em> (Vol. 1, pp. 19-33).
+          Cambridge, Massachusetts; London, England: The MIT Press.</p>
+        <p>Murray, J. (1997) <em>Hamlet on the Holodeck: the Future of Narrative in Cyberspace</em>. New York: Free
+          Press.</p>
+        <p>Nitsche, M. (2007) “Mapping time in video games,” in <em>Situated Play, Proceedings of DiGRA 2007
+            Conference</em>, pp. 145–151.</p>
+        <p>Perron, B. &amp; Schroter, F. (2016) <em>Video Games and the Mind: Essays on Cognition, Affect and
+            Emotion</em>. North Carolina: McFarland.</p>
+        <p>Prince, G. (2003) <em>Dictionary of Narratology</em>. 2nd edition, Lincoln: University of Nebraska Press.</p>
+        <p>Ryan, M. (2001) <em>Narrative as virtual reality: immersion and interactivity in literature and electronic
+            media.</em> Baltimore: Johns Hopkins University.</p>
+        <p>Sali, S., Wardrip-Fruin, N., Dow, S., Mateas, M., Kurniawan, S., Reed, A. &amp; Liu, R. (2010) ‘Playing with
+          words: from intuition to evaluation of game dialogue interfaces’ in <em>Conference: Proceedings of the Fifth
+            International Conference on the Foundations of Digital Games.</em></p>
+        <p>Schechner, R. (2006) <em>Performance Studies.</em> London: Routledge.</p>
+        <p>Searle, J. <em>Speech Acts: An Essay in the Philosophy of Language</em>. London: Cambridge University Press,
+          1969.</p>
+        <p>Short, E. (2016) <em>Beyond Branching: Quality-Based, Salience-Based, and Waypoint Narrative
+            Structures.</em>&lt;<a
+            href="https://emshort.blog/2016/04/12/beyond-branching-quality-based-and-salience-based-narrative-structures/">https://emshort.blog/2016/04/12/beyond-branching-quality-based-and-salience-based-narrative-structures/</a>&gt;
+          (Accessed: August 11th 2021)</p>
+        <p>Short, E. (2019) <em>Storylets: you want them.</em>&lt;<a
+            href="https://emshort.blog/2019/11/29/storylets-you-want-them/">https://emshort.blog/2019/11/29/storylets-you-want-them/</a>&gt;
+          (Accessed: August 11th 2021).</p>
+        <p>Short, E. (2021) <em>Design of Orwell’s Animal Farm – Emily Short speaking to the London IF
+            Meetup</em>,<em>January 2021</em>. 4 April 2021. &lt;<a
+            href="https://www.youtube.com/watch?v=B0Ccatc8Pa8">https://www.youtube.com/watch?v=B0Ccatc8Pa8</a>&gt;
+          (Accessed: August 11th 2021)</p>
+        <p>Tanenbaum, T. J. &amp; Tanenbaum, K. (2008) ‘Improvisation and Performance as Models for Interacting with
+          Stories’, <em>Proceedings of Interactive Storytelling, First Joint International Conference on Interactive
+            Digital Storytelling</em>.</p>
+        <p>Tanenbaum, J. (2011). ‘Being in the Story: Readerly Pleasure, Acting Theory, and Performing a Role.’ In Si,
+          M., Thue, D., André, E., Lester, J., Tanenbaum, J. &amp; Zammitto, V. (Eds.), <em>Interactive
+            Storytelling</em> (Vol. 7069, pp. 55-66): Springer Berlin / Heidelberg.</p>
+        <p>Tychsen, A., Hitchens, M. &amp; Drachen, A. (2009) “Game time: modeling and analyzing time in multiplayer and
+          massively multiplayer games,” <em>Games and Culture</em>, vol. 4, no. 2, pp. 170– 201.</p>
+        <p>Wolf, M. J. P. (2001) “Space in the video game,” in <em>The Medium of Video Game</em>, Wolf, J. P. M., Ed.,
+          pp. 51–75, Austin, TX: University of Texas Press.</p>
+        <p>Yang, R. (2018) <em>Notes on “Sparkling Dialogue”, a great narrative design / game writing talk by Jon Ingold
+            at AdventureX 2018.</em>&lt;<a
+            href="https://www.blog.radiator.debacle.us/2018/11/notes-on-sparking-dialogue-great.html?m=1">https://www.blog.radiator.debacle.us/2018/11/notes-on-sparking-dialogue-great.html?m=1</a>&gt;
+          (Accessed June 29th 2021).</p>
+        <p>Zagal, J. P. &amp; Mateas, M. (2007) “Temporal frames: a unifying framework for the analysis of game
+          temporality,” in <em>Situated Play, Proceedings of DiGRA 2007 Conference</em>, pp. 516–522.</p>
+        <p>Zoran, G. (1984) “Towards a theory of space in narrative” in <em>Poetics Today</em>, vol. 5, pp. 309–335.</p>
+        <h2 id="ludography">Ludography</h2>
+        <p>A Sharp (1999) <em>King of Dragon Pass</em>[Video game]. A Sharp.</p>
+        <p>Amplitude Studios (2021) <em>Humankind</em> [Video game]. Sega.</p>
+        <p>Bethesda Game Studios (2008) <em>Fallout 3</em> [Video game]. Bethesda Softworks.</p>
+        <p>Bethesda Game Studios (2011)<em>The Elder Scrolls V: Skyrim</em> [Video game]. Bethesda Softworks.</p>
+        <p>Bethesda Game Studios (2015) <em>Fallout 4</em> [Video game]. Bethesda Softworks.</p>
+        <p>Bioware (1998) <em>Baldur’s Gate</em> [Video game]. Interplay.</p>
+        <p>Bioware (2000) <em>Baldur’s Gate II: Shadows of Amn</em> [Video game]. Interplay.</p>
+        <p>Bioware (2003) <em>Star Wars: Knights of the Old Republic</em>[Video game]. LucasArts.</p>
+        <p>Bioware (2007) <em>Mass Effect</em> [Video game]. EA.</p>
+        <p>Black Isle Entertainment (1999) <em>Planescape: Torment</em> [Video game]. Interplay.</p>
+        <p>Blizzard Entertainment (2004) <em>World of Warcraft</em> [Video game]. Blizzard Entertainment.</p>
+        <p>Campo Santo (2016) <em>Firewatch</em> [Video game]. Campo Santo.</p>
+        <p>Case, N. (2014) <em>Coming Out Simulator</em> [Video game]. Case, N.</p>
+        <p>CD Projekt Red (2015) <em>The Witcher III</em> [Video game]. CD Projekt.</p>
+        <p>Crowther, W. &amp; Woods, D. (1977) <em>Colossal Cave Adventure</em> [Video game]. Crowther, W. &amp; Woods,
+          D.</p>
+        <p>EA Sports (2020) <em>Fifa 21</em>[Video game]. EA Sports.</p>
+        <p>Exxos (1988) <em>Captain Blood</em> [Video game]. Infogrames.</p>
+        <p>Failbetter Games (2015) <em>Sunless Sea</em> [Video game]. Failbetter Games.</p>
+        <p>Infocom (1980) <em>Zork I</em> [Video game]. Personal Software.</p>
+        <p>Inkle (2020) <em>Pendragon</em> [Video game]. Inkle.</p>
+        <p>Interplay Productions (1997) <em>Fallout</em> [Video game]. Interplay Productions.</p>
+        <p>Introversion Software (2001) <em>Uplink</em> [Video game]. Introversion Software.</p>
+        <p>Ion Storm (2001) <em>Deus Ex</em>[Video game]. Eidos Interactive.</p>
+        <p>Larian Studios (2014) <em>Divinity: Original Sin</em> [Video game]. Larian Studios.</p>
+        <p>Larian Studios (2020 - early access) <em>Baldur’s Gate III</em> [Video game]. Larian Studios.</p>
+        <p>Lucasfilm Games (1990) <em>The Secret of Monkey Island</em> [Video game]. Lucasfilm Games.</p>
+        <p>Naughty Dog (2013) <em>The Last of Us</em> [Video game]. Sony Computer Entertainment.</p>
+        <p>Naughty Dog (2020) <em>The Last of Us 2</em> [Video game]. Sony Computer Entertainment.</p>
+        <p>Nerial (2020) <em>Animal Farm</em>[Video game]. The Dairymen.</p>
+        <p>Nintendo EPD (2017) <em>Legend of Zelda: Breath of the Wild</em> [Video game]. Nintendo.</p>
+        <p>Obsidian Entertainment. (2010) <em>Alpha Protocol</em> [Video game]. Sega.</p>
+        <p>Obsidian Entertainment (2015) <em>Pillars of Eternity</em> [Video game]. Paradox Interactive.</p>
+        <p>Obsidian Entertainment (2016) <em>Tyranny</em> [Video game]. Paradox Interactive.</p>
+        <p>Paradox Studios (2012) <em>Crusader Kings II</em> [Video game]. Paradox Interactive.</p>
+        <p>Perfect Entertainment (1999) <em>Discworld Noir</em>[Video game]. GT Interactive.</p>
+        <p>Playabl Studios (2005) <em>Facade</em> [Video game]. Playabl Inc.</p>
+        <p>Playground Games (2021) <em>Forza Horizon 5</em> [Video game]. Xbox Game Studios.</p>
+        <p>Quantic Dream (2018) <em>Detroit: Become Human</em> [Video game]. Quantic Dream.</p>
+        <p>Remedy Entertainment (2001) <em>Max Payne</em> [Video game]. Gathering of Developers.</p>
+        <p>Rockstar North (2013) <em>Grand Theft Auto V</em> [Video game]. Rockstar Games.</p>
+        <p>Rockstar Studios (2018) <em>Red Dead Redemption 2</em> [Video game]. Rockstar Games.</p>
+        <p>Supergiant Games (2020) <em>Hades</em> [Video game]. Supergiant Games.</p>
+        <p>The Fullbright Company (2013) _ Gone Home_ [Video game]. The Fullbright Company.</p>
+        <p>Telltale Games (2012) <em>The Walking Dead</em> [Video game]. Telltale Games.</p>
+        <p>Troika Games (2004) <em>Vampire: The Masquerade: Bloodlines</em> [Video game]. Activision.</p>
+        <p>Valve (2004) <em>Half-Life 2</em> [Video game]. Valve.</p>
+        <p>Valve (2020) <em>Half-Life: Alyx</em> [Video game]. Valve.</p>
+        <p>Valve (2011) <em>Portal 2</em> [Video game]. Valve.</p>
+        <p>Volition (2013) <em>Saints Row IV</em> [Video game]. Deep Silver.</p>
+        <p>ZA/UM (2019) <em>Disco Elysium</em> [Video game]. ZA/UM.</p>
+        <p>11bit Studios (2018) <em>Frostpunk</em> [Video game]. 11bit Studios.</p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
